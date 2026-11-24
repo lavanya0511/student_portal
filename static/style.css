@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f3ff;
+    color: #333;
+}
+
+/* Header and Navigation */
+
+header {
+    background-color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    color: purple;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: purple;
+}
+
+/* Main Content */
+
+main {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+main h2 {
+    color: purple;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+main h3 {
+    color: purple;
+    font-size: 22px;
+    margin: 25px 0 15px;
+}
+
+main p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+
+button {
+    background-color: purple;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: indigo;
+}
+
+/* Normal Links */
+
+main a {
+    color: #8a2be2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #6a0dad;
+    text-decoration: underline;
+}
+
+/* Home Page Links */
+
+main > a {
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+main > a:hover {
+    background-color: indigo;
+    color: white;
+    text-decoration: none;
+}
+
+/* Registration and Login Forms */
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: purple;
+}
+
+form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Login and Registration Page Links */
+
+main form + p {
+    margin-top: 20px;
+}
+
+main form + p a {
+    color: #8a2be2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main form + p a:hover {
+    color: #6a0dad;
+    text-decoration: underline;
+}
+
+/* Dashboard and Admin Pages */
+
+main a[href="/dashboard"] {
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+main a[href="/dashboard"]:hover {
+    background-color: indigo;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: gray;
+    font-size: 14px;
+}
+
+/* Student Management Table */
+
+main table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+main table th,
+main table td {
+    padding: 15px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+main table th {
+    background-color: purple;
+    color: white;
+}
+
+main table tbody tr {
+    background-color: white;
+}
+
+main table tbody tr:hover {
+    background-color: #e6e6fa;
+}
+
+/* Delete Form and Button */
+
+main table form {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+main table button {
+    padding: 6px 12px;
+    margin: 0;
+    white-space: nowrap;
+    width: auto;
+}
+
+main table td:last-child {
+    width: 100px;
+    text-align: center;
+}

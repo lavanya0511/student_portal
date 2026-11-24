@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Portal</h1>
+    </header>
+
+    <main>
+        <h2>Admin Dashboard</h2>
+
+        <p>Welcome to the Student Portal Admin Page.</p>
+
+        <p>You have administrator access.</p>
+
+        <a href="/dashboard">Back to Dashboard</a>
+        <a href="/admin/students">Student Management</a>
+
+        <form action="/logout" method="POST">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <button type="submit">Logout</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
